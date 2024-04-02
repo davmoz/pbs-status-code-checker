@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PBS Status Code checker</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-    <h1>PBS AutO3 Status Code checker</h1>
-    <input type="number" id="statusCode" placeholder="Enter a uint32 code" min="0" max="4294967295" oninput="checkStatus()">
-    <div id="results"></div>
-</div>
-<script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBS Status Code Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PBS AutO3 Status Code Checker</h1>
+      <input
+        type="text"
+        id="statusCode"
+        placeholder="Enter hex code (e.g., 1A2F3E4D)"
+        oninput="checkStatus()"
+      />
+      <div id="results">
+        <div class="all-clear">
+          No warnings or errors detected. System is operating normally.
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
