@@ -25,7 +25,7 @@ const errors = {
   134217728: "Internal pressure above limit",
   268435456: "Output cooling water temperature above limit",
   536870912: "HUnit has no power",
-  1073741824: "Input gas flow below min limit during production",
+  1073741824: "Input gas flow below min limit during air state or production state",
 };
 
 function checkStatus() {
